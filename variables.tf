@@ -29,7 +29,8 @@ variable "worker_count" {
   default = "3"
 }
 variable "worker_pool_name" {
-  description = "${var.name}-pool"
+  description = "Kubernetes Worker Pool Name"
+  default = "${var.name}-pool"
 }
 variable "worker_dns" {
   description = "DNS for agents in pool"

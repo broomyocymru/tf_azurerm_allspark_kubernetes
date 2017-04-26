@@ -15,6 +15,9 @@ Terraform module to configure an AllSpark Kubernetes Cluster.
       source  = "github.com/broomyocymru/tf_azurerm_allspark_kubernetes"
       allspark = "${module.allspark.allspark_data}"
       name = "k8dev"
+      service_principal_id = "${var.azurerm_client_id}"
+      service_principal_secret = "${var.azurerm_client_secret}"
+      admin_username = "k8Admin"
     }
 
 
