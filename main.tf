@@ -21,7 +21,6 @@ resource "azurerm_container_service" "k8" {
     name       = "${var.worker_pool_name}"
     count      = "${var.worker_count}"
     dns_prefix = "${var.name}-worker"
-    fqdn       = "${var.worker_dns}"
     vm_size    = "${var.worker_vm}"
   }
 

@@ -34,7 +34,7 @@ variable "worker_pool_name" {
 }
 variable "worker_dns" {
   description = "DNS for agents in pool"
-  default = "k8.allspark.com"
+  default = "demo.allspark.com"
 }
 variable "worker_vm" {
   description = "VM Size"
