@@ -1,6 +1,6 @@
 resource "azurerm_container_service" "k8" {
   name                   = "${var.name}"
-  location               = "West Europe"
+  location               = "North Europe"
   resource_group_name    = "${var.allspark["resource_group_name"]}"
   orchestration_platform = "Kubernetes"
 
